@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  sonosweb:
+    build: .
+    network_mode: host
+    restart: always
+    environment:
+      - INTERFACES=eth1
